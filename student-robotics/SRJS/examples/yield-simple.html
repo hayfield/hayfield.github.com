@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+	<title>SRJS: Simple Yield Example</title> 
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="css/SRJS.css" />
+	<script type="text/javascript" src="../build/SRJS-full.js"></script>
+
+</head> 
+<body>
+<script type="text/javascript">
+// See https://www.studentrobotics.org/docs/programming/sr/query/
+// Port of the following code:
+// while True:
+//     print "the code has started running"
+//     yield query.timeout( 3 )
+//     print "three seconds have passed"
+
+SRJS.Init();
+
+var mainFunct = function(){
+	
+	// output one string, then a second one 3 seconds later
+	console.log( 'the code has started running' );
+	robot.Yield( 3, function(){
+		console.log( 'three seconds have passed' );
+	});
+	
+};
+
+var args = {
+	main: mainFunct
+};
+
+SRJS.CURRENT_ARENA.addRobot( args );
+</script>
+</body> 
+</html>
