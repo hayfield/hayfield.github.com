@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Presentation Feedback</title>
+    <link type="text/css" href="css/page.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/presentationTweeter.js"></script>
+</head>
+<body>
+    <div id="startPage">
+        <p>A tool to allow a document to be displayed on a page, with feed of tweets being @messaged to a particular Twitter account in a sidebar.<br />
+        Refresh to get back here to update the inputs.</p>
+        <table>
+            <tr>
+                <td>Content URL: </td>
+                <td><input type="text" id="URLInput" value="http://www.example.com/doc.pdf" class="defaultText" /></td>
+            </tr>
+            <tr>
+                <td>Twitter Username: </td>
+                <td><input type="text" id="twitterInput" value="example" class="defaultText" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Present!" id="goButton" /></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="presentingPane">
+        <div id="presentation">
+            <iframe src="" id="presentationIframe"></iframe>
+        </div>
+        <div id="twitterInfo">
+            
+        </div>
+    </div>
+</body>
+</html>

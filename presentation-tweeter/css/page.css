@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+#startPage {
+    margin: 20px;
+}
+
+#startPage table {
+    border: 15px solid #0F0;
+    padding: 20px;
+}
+
+#startPage input[type=text] {
+    width: 300px;
+}
+
+input.defaultText {
+    color: #666;
+}
+
+#goButton {
+    width: 100%;
+}
+
+#presentingPane {
+    background-color: #00F;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#presentation {
+    background-color: #0F0;
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+#twitterInfo {
+    background-color: #F00;
+    height: 100%;
+    width: 20%;
+    float: right;
+    overflow: scroll;
+}
+
+#presentationIframe {
+    height: 100%;
+    width: 100%;
+}
+
+.tweet {
+    width: 100%;
+    background-color: #FF0;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.tweet.odd {
+    background-color: #0FF;
+}
