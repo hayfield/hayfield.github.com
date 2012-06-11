@@ -13,7 +13,7 @@
 // Port of the following code:
 // while True:
 //     print "the code has started running"
-//     yield query.timeout( 3 )
+//     time.sleep(3)
 //     print "three seconds have passed"
 
 SRJS.Init();
@@ -22,7 +22,7 @@ var mainFunct = function(){
 	
 	// output one string, then a second one 3 seconds later
 	console.log( 'the code has started running' );
-	robot.Yield( 3, function(){
+	robot.wait_for( 3, function(){
 		console.log( 'three seconds have passed' );
 	});
 	
